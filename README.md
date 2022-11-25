@@ -9,7 +9,7 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel and Passport is fully intergrated. only Clone the Project and Passport and Laravel Starter KIT
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
@@ -66,4 +66,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-### php artisan passport:install
+Run these Command
+
+ ```
+ php artisan migrate
+ ```
+
+```
+ php artisan passport:install
+ ```
