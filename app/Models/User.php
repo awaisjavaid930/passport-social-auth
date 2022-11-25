@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'gender',
+        'facebook_provider_id',
+        'google_provider_id'
     ];
 
     /**
@@ -41,4 +44,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function accessTokens()
+    {
+        return $this->hasMany(OauthAccessToken::class);
+    }
+
 }
