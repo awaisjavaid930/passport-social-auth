@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SocialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/auth/github' , [SocialController::class , 'index']);
+Route::get('/auth/google' , [SocialController::class , 'google']);
+
+Route::get('/auth/callback' , [SocialController::class , 'callBack']);
